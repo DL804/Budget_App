@@ -227,10 +227,23 @@ var Controller = (function(budgetCtrl, UICtrl) {
     }; 
     
     var ctrlDeleteItem = function(event){
-        var itemID = event.target.parentNode.parentNode.parentNode.parentNode.id;
+        var itemID, splitID;
+        
+        itemID = event.target.parentNode.parentNode.parentNode.parentNode.id;
         
         if (itemID) {
             
+            splitID = itemID.split('-'); 
+            type = splitID[0]; 
+            ID = splitID[1]; 
+            
+            // 1. delete item from data structure
+            
+            
+            // 2. delete item from user interface 
+            
+            
+            // 3. Update and show the new budget
         }
         
     }
